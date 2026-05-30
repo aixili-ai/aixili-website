@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>核心优势 - 上海艾希里科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tech: { main: '#0F3460', light: '#165DFF', dark: '#08254F', gray: '#E8F0FE' }
+                    },
+                    fontFamily: { sans: ['Microsoft YaHei','sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(135deg, #0F3460 0%, #08254F 100%); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- 导航栏 -->
+<nav class="bg-white shadow-md fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+            <div class="text-2xl font-bold text-tech-main">艾希里科技</div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="../index.html" class="text-gray-600 hover:text-tech-main">首页</a>
+                <a href="products.html" class="text-gray-600 hover:text-tech-main">产品中心</a>
+                <a href="advantage.html" class="text-tech-main font-semibold border-b-2 border-tech-light">核心优势</a>
+                <a href="cases.html" class="text-gray-600 hover:text-tech-main">应用案例</a>
+                <a href="about.html" class="text-gray-600 hover:text-tech-main">关于我们</a>
+                <a href="contact.html" class="text-gray-600 hover:text-tech-main">联系我们</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- 标题区 -->
+<section class="pt-16 pb-12 bg-gradient-tech text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold">核心竞争优势</h1>
+        <p class="mt-2 text-gray-200">高端设备 · 千级无尘 · 精密检测 · 成熟工艺 · 行业经验</p>
+    </div>
+</section>
+
+<!-- 1. 先进生产设备 -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-tech-main text-center">先进生产设备</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <img src="../images/advantage/1.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/2.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/3.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/4.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+        </div>
+    </div>
+</section>
+
+<!-- 2. 千级无尘车间 -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-tech-main text-center">千级无尘车间</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <img src="../images/advantage/5.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/6.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/7.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+        </div>
+    </div>
+</section>
+
+<!-- 3. 精密检测体系 -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-tech-main text-center">精密检测体系</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <img src="../images/advantage/8.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/9.png" class="rounded-lg h-64 w-full object-cover bg-gray-200">
+        </div>
+    </div>
+</section>
+
+<!-- 4. 后道工艺：清洗 · 抛光 · 包装 -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-6 text-tech-main text-center">后道工艺：清洗 · 抛光 · 包装</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <img src="../images/advantage/10.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/11.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+            <img src="../images/advantage/12.png" class="rounded-lg h-56 w-full object-cover bg-gray-200">
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-tech-dark text-gray-300 py-8 text-center text-sm">
+    © 2026 上海艾希里科技有限公司 版权所有
+</footer>
+
+</body>
+</html>

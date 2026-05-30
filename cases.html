@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>应用案例 - 艾希里科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { tech: { main: '#0F3460', light: '#165DFF', dark: '#08254F', gray: '#E8F0FE' } },
+                    fontFamily: { sans: ['Microsoft YaHei','sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(135deg, #0F3460 0%, #08254F 100%); }
+            .card-hover { transition: all 0.3s; }
+            .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(15,52,96,0.12); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- 导航栏 -->
+<nav class="bg-white shadow-md fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex justify-between items-center">
+        <div class="text-2xl font-bold text-tech-main">艾希里科技</div>
+        <div class="hidden md:flex space-x-6 text-sm">
+            <a href="../index.html" class="text-gray-600 hover:text-tech-main">首页</a>
+            <a href="products.html" class="text-gray-600 hover:text-tech-main">产品中心</a>
+            <a href="advantage.html" class="text-gray-600 hover:text-tech-main">核心优势</a>
+            <a href="cases.html" class="text-tech-main font-semibold border-b-2 border-tech-light">应用案例</a>
+            <a href="about.html" class="text-gray-600 hover:text-tech-main">关于我们</a>
+            <a href="contact.html" class="text-gray-600 hover:text-tech-main">联系我们</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 标题区 -->
+<section class="pt-16 pb-12 bg-gradient-tech text-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-3xl font-bold">半导体设备精密加工应用案例</h1>
+        <p class="mt-2 text-gray-200">覆盖前道制程、后道检测、真空设备、机器人全场景</p>
+    </div>
+</section>
+
+<!-- 案例列表 -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- 案例1 -->
+            <div class="bg-tech-gray rounded-xl p-6 card-hover">
+                <div class="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                    <img src="../images/cases/1.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-tech-main">刻蚀设备真空腔体组件</h3>
+                <p class="text-gray-600 mt-3">为国内头部半导体设备企业提供刻蚀设备腔体精密加工，超高真空、高精度、高洁净度，满足3nm/5nm先进制程要求。</p>
+                <div class="mt-4 text-sm text-gray-500">
+                    <p>材质：6061铝合金 / 精度：±0.002mm / 真空度：1×10⁻⁶Pa</p>
+                </div>
+            </div>
+
+            <!-- 案例2 -->
+            <div class="bg-tech-gray rounded-xl p-6 card-hover">
+                <div class="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                    <img src="../images/cases/2.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-tech-main">薄膜沉积设备反应腔</h3>
+                <p class="text-gray-600 mt-3">应用于半导体薄膜沉积设备，腔体表面电解抛光，气密性优异，适配高温、高真空、高洁净生产环境。</p>
+                <div class="mt-4 text-sm text-gray-500">
+                    <p>材质：316L不锈钢 / 光洁度：Ra≤0.4μm / 无尘包装交付</p>
+                </div>
+            </div>
+
+            <!-- 案例3 -->
+            <div class="bg-tech-gray rounded-xl p-6 card-hover">
+                <div class="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                    <img src="../images/cases/3.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-tech-main">运动关节核心结构</h3>
+                <p class="text-gray-600 mt-3">提供机器人腿部、手臂的核心关节结构件，保证运动的精准和灵活。</p>
+                <div class="mt-4 text-sm text-gray-500">
+                    <p>材质：7075航空铝 / 形位公差：≤0.003mm / 五轴联动加工</p>
+                </div>
+            </div>
+
+            <!-- 案例4 -->
+            <div class="bg-tech-gray rounded-xl p-6 card-hover">
+                <div class="aspect-video bg-gray-200 rounded-lg mb-4 overflow-hidden">
+                    <img src="../images/cases/4.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-bold text-tech-main">高精度执行末端</h3>
+                <p class="text-gray-600 mt-3">提供高精度的手部抓取机构、夹持器等，实现复杂的操作任务。</p>
+                <div class="mt-4 text-sm text-gray-500">
+                    <p>材质：铝合金+不锈钢 / 平面度：≤0.002mm / 千级洁净车间生产</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-tech-dark text-gray-300 py-8 text-center text-sm">
+    © 2026 上海艾希里科技有限公司 版权所有
+</footer>
+
+</body>
+</html>

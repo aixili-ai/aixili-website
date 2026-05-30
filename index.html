@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上海艾希里科技有限公司 - 半导体精密零部件加工</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tech: { main: '#0F3460', light: '#165DFF', dark: '#08254F', gray: '#E8F0FE' }
+                    },
+                    fontFamily: { sans: ['Microsoft YaHei','sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(135deg, #0F3460 0%, #08254F 100%); }
+            .card-hover { transition: all 0.3s ease; }
+            .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(15,52,96,0.1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- 导航栏 + LOGO 已加入 -->
+<nav class="bg-white shadow-md fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+
+            <!-- 左侧：公司LOGO + 名称 -->
+            <div class="flex items-center gap-3">
+                <img src="images/logo/logo.png" class="h-10 w-auto">
+                <span class="text-xl font-bold text-tech-main">上海艾希里科技有限公司</span>
+            </div>
+
+            <!-- 右侧导航 -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-tech-main font-semibold border-b-2 border-tech-light">首页</a>
+                <a href="pages/products.html">产品中心</a>
+                <a href="pages/advantage.html">核心优势</a>
+                <a href="pages/cases.html">应用案例</a>
+                <a href="pages/about.html">关于我们</a>
+                <a href="pages/contact.html">联系我们</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!--  Banner 区域 -->
+<section class="pt-16 h-screen flex items-center bg-gradient-tech text-white">
+    <div class="max-w-7xl mx-auto px-4 w-full">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+            半导体设备精密零部件<br>高端定制加工服务商
+        </h1>
+        <p class="mt-4 text-lg text-gray-200 max-w-2xl">
+            专注金属/塑料精密加工 | 千级无尘车间 | 真空腔体 | 半导体/机器人专用结构件
+        </p>
+        <div class="mt-8 flex gap-4">
+            <a href="pages/products.html" class="bg-tech-light text-white px-6 py-3 rounded-lg font-semibold hover:bg-tech-main transition">产品中心</a>
+            <a href="pages/contact.html" class="bg-white text-tech-main px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">联系咨询</a>
+        </div>
+    </div>
+</section>
+
+<!-- 核心优势 -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-tech-main">核心优势</h2>
+        <div class="w-20 h-1 bg-tech-light mx-auto mt-3 mb-10"></div>
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="p-6 bg-tech-gray rounded-lg card-hover">
+                <i class="fas fa-cogs text-3xl text-tech-light mb-3"></i>
+                <h3 class="font-bold text-tech-main">高端CNC设备</h3>
+                <p class="text-sm text-gray-600 mt-2">五轴联动加工，精度可达±0.001mm</p>
+            </div>
+            <div class="p-6 bg-tech-gray rounded-lg card-hover">
+                <i class="fas fa-vial text-3xl text-tech-light mb-3"></i>
+                <h3 class="font-bold text-tech-main">千级无尘车间</h3>
+                <p class="text-sm text-gray-600 mt-2">ISO Class 6 高洁净生产环境</p>
+            </div>
+            <div class="p-6 bg-tech-gray rounded-lg card-hover">
+                <i class="fas fa-search-plus text-3xl text-tech-light mb-3"></i>
+                <h3 class="font-bold text-tech-main">全维度检测</h3>
+                <p class="text-sm text-gray-600 mt-2">三坐标 / 氦检 / 表面粗糙度检测</p>
+            </div>
+            <div class="p-6 bg-tech-gray rounded-lg card-hover">
+                <i class="fas fa-user-tie text-3xl text-tech-light mb-3"></i>
+                <h3 class="font-bold text-tech-main">资深技术团队</h3>
+                <p class="text-sm text-gray-600 mt-2">半导体行业多年精密加工经验</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 产品预览 -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-tech-main">产品展示</h2>
+        <div class="w-20 h-1 bg-tech-light mx-auto mt-3 mb-10"></div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-xl p-5 card-hover">
+                <img src="images/products/1.png" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-tech-main">金属精密件</h3>
+            </div>
+            <div class="bg-white rounded-xl p-5 card-hover">
+                <img src="images/products/4.png" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-tech-main">工程塑料件</h3>
+            </div>
+            <div class="bg-white rounded-xl p-5 card-hover">
+                <img src="images/cases/1.png" class="w-full h-40 object-cover rounded-lg mb-4">
+                <h3 class="font-bold text-tech-main">真空腔体</h3>
+            </div>
+        </div>
+        <a href="pages/products.html" class="inline-block mt-10 bg-tech-light text-white px-6 py-3 rounded-lg font-semibold hover:bg-tech-main transition">查看全部产品</a>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-tech-dark text-gray-300 py-8 text-center text-sm">
+    © 2026 上海艾希里科技有限公司 版权所有
+</footer>
+
+</body>
+</html>

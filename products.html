@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - 艾希里科技</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tech: { main: '#0F3460', light: '#165DFF', dark: '#08254F', gray: '#E8F0FE' }
+                    },
+                    fontFamily: { sans: ['Microsoft YaHei','sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-gradient-tech { background: linear-gradient(135deg, #0F3460 0%, #08254F 100%); }
+            .product-card { transition: all 0.3s; }
+            .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(15,52,96,0.1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- 导航 -->
+<nav class="bg-white shadow-md fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        <div class="text-2xl font-bold text-tech-main">艾希里科技</div>
+        <div class="hidden md:flex space-x-7 text-sm">
+            <a href="../index.html" class="text-gray-600 hover:text-tech-main">首页</a>
+            <a href="products.html" class="text-tech-main font-semibold border-b-2 border-tech-light">产品中心</a>
+            <a href="advantage.html" class="text-gray-600 hover:text-tech-main">核心优势</a>
+            <a href="cases.html" class="text-gray-600 hover:text-tech-main">应用案例</a>
+            <a href="about.html" class="text-gray-600 hover:text-tech-main">关于我们</a>
+            <a href="contact.html" class="text-gray-600 hover:text-tech-main">联系我们</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 标题区 -->
+<section class="pt-16 pb-12 bg-gradient-tech text-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h1 class="text-3xl font-bold">产品中心</h1>
+        <p class="mt-2 text-gray-200">精密金属件 | 高端工程塑料件 | 半导体设备零部件定制</p>
+    </div>
+</section>
+
+<!-- 金属件产品展示 → 3张图片 -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-10 text-center">
+            <h2 class="text-2xl font-bold text-tech-main">金属件产品展示</h2>
+            <div class="w-20 h-1 bg-tech-light mx-auto mt-3"></div>
+            <p class="mt-3 text-gray-600">铝合金 / 不锈钢 / 钛合金 精密加工零部件</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- 金属件 1 -->
+            <div class="product-card bg-tech-gray rounded-xl p-5">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/1.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">金属精密结构件</h3>
+                <p class="text-sm text-gray-600 mt-2">五轴CNC加工，适用于半导体设备、检测设备、自动化设备</p>
+            </div>
+
+            <!-- 金属件 2 -->
+            <div class="product-card bg-tech-gray rounded-xl p-5">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/2.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">真空腔体部件</h3>
+                <p class="text-sm text-gray-600 mt-2">316L/6061材质，超高真空、氦检合格、表面电解抛光</p>
+            </div>
+
+            <!-- 金属件 3 -->
+            <div class="product-card bg-tech-gray rounded-xl p-5">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/3.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">半导体设备金属件</h3>
+                <p class="text-sm text-gray-600 mt-2">千级洁净车间生产，无油污、无粉尘、高精度交付</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 塑料件产品展示 → 3张图片 -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="mb-10 text-center">
+            <h2 class="text-2xl font-bold text-tech-main">塑料件产品展示</h2>
+            <div class="w-20 h-1 bg-tech-light mx-auto mt-3"></div>
+            <p class="mt-3 text-gray-600">PEEK / PCTFE / PPS 高性能工程塑料精密件</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- 塑料件 1 -->
+            <div class="product-card bg-white rounded-xl p-5 shadow-sm">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/4.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">PEEK精密零件</h3>
+                <p class="text-sm text-gray-600 mt-2">耐高温、耐腐蚀、绝缘、耐磨，半导体/医疗设备专用</p>
+            </div>
+
+            <!-- 塑料件 2 -->
+            <div class="product-card bg-white rounded-xl p-5 shadow-sm">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/5.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">PCTFE绝缘部件</h3>
+                <p class="text-sm text-gray-600 mt-2">极低吸水性、高真空稳定性，适用于真空设备、半导体腔体</p>
+            </div>
+
+            <!-- 塑料件 3 -->
+            <div class="product-card bg-white rounded-xl p-5 shadow-sm">
+                <div class="aspect-video bg-gray-100 rounded-lg overflow-hidden mb-4">
+                    <img src="../images/products/6.png" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-lg font-bold text-tech-main">特种工程塑料件</h3>
+                <p class="text-sm text-gray-600 mt-2">可加工各种进口塑料，满足高精度、高洁净、高耐候需求</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="bg-tech-dark text-gray-300 py-8 text-center text-sm">
+    © 2026 上海艾希里科技有限公司 版权所有
+</footer>
+
+</body>
+</html>
